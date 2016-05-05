@@ -91,7 +91,7 @@ int on_lock( object target ) {
    key = find_key( ob->query_keycode() );
 
    if( !key ) {
-      msg("You need a different key to lock ~targ");
+      msg("Your keyring doesn't have the correct key to lock ~targ.");
       return 1;
    }
 
