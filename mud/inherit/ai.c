@@ -5,10 +5,6 @@
  * because I want to :P
  */
 
-#ifdef DOXYGEN
-struct Ai {
-#endif
-
 #include <emote.h>
 
 int tickdelay;    // delay between ticks
@@ -118,7 +114,3 @@ int is_hungry() {
    return (
       this_object()->query_food() < this_object()->query_food_capacity() / 2);
 }
-
-#ifdef DOXYGEN
-};
-#endif

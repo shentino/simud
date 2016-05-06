@@ -14,9 +14,6 @@
  * This file holds their override settings. These settings are
  * manipulated by the 'keysetup' verb.
  */
-#ifdef DOXYGEN
-struct Keyboard {
-#endif
 
 /** A mapping from key escape codes to key values.
  */
@@ -115,7 +112,3 @@ int translate_code( string val ) {
    // None of that worked, so give up.
    return KEY_NONE;
 }
-
-#ifdef DOXYGEN
-};
-#endif

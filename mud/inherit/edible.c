@@ -26,10 +26,6 @@
  *     - Al [ Oct 7, 05 ]
  */
 
-#ifdef DOXYGEN
-struct Edible {
-#endif
-
 /// Can this item be eaten? 1 - yes, 0 - no
 int edible;
 /// Can this item be drunk? 1 - yes, 0 - no
@@ -198,8 +194,3 @@ varargs int default_consume( int max, int flag ) {
    }
    return 1;
 }
-
-
-#ifdef DOXYGEN
-};
-#endif DOXYGEN

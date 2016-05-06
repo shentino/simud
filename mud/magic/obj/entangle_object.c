@@ -7,9 +7,6 @@
  * separately and then readdressing this object when the time comes.
  * - al [10/10/04]
  */
-#ifdef DOXYGEN
-struct Entangle : public Object {
-#endif
 
 int strength;
 string bond_desc;
@@ -91,7 +88,3 @@ void on_action(object target, mixed param) {
       command("struggle",this_player());
    }
 }
-
-#ifdef DOXYGEN
-};
-#endif

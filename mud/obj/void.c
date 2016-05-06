@@ -4,10 +4,6 @@
  * anymore.
  */
 
-#ifdef DOXYGEN
-struct Void : public Desc {
-#endif
-
 /// \return this_object() if \a str is "void" or "anomaly", and false if not.
 object id(string str) {
    if( str == "void" || str == "anomaly" ) return this_object();
@@ -53,7 +49,3 @@ escape() {
 init() {
    add_action("escape", "escape");
 }
-
-#ifdef DOXYGEN
-};
-#endif

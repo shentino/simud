@@ -21,9 +21,6 @@
  * modified descriptions may be clobbered when the quantity is reset to
  * 1.
  */
-#ifdef DOXYGEN
-struct Quantity : public Item, public Desc {
-#endif
 
 /// The stored quantity
 int quantity;
@@ -218,7 +215,3 @@ void on_move( object src ) {
 int query_is_quantity() {
    return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -30,11 +30,6 @@
  * Note: Needs updating!
  */
 
-#ifdef DOXYGEN
-struct Objedit : public List, public Wizard {
-#endif
-
-
 #define OBJEDIT_PREFIX "/* OBJEDIT { */"
 #define OBJEDIT_SUFFIX "/* } OBJEDIT */"
 
@@ -334,7 +329,3 @@ query_distant() { return "an object editor"; }
 query_name() { return "objedit"; }
 id(str) { return str == "objedit"; }
 query_look() { return "Acius's funky object editor. Edits objects."; }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -9,9 +9,6 @@
  * object. You should include desc.h to use these functions.
  */
 /// Inheritable component for defining descriptions
-#ifdef DOXYGEN
-struct Desc {
-#endif
 
 string name;  ///< The name of this object; generally just one word.
 
@@ -295,7 +292,3 @@ object id(string str) {
    // No more container transparency! It causes lots of bugs.
    return 0;
 }
-
-#ifdef DOXYGEN
-};
-#endif

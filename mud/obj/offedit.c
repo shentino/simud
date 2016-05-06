@@ -16,10 +16,6 @@
  * version 2.0. The problem is that the string overloads.
  */
 
-#ifdef DOXYGEN
-struct Offedit : public Object {
-#endif
-
 string io_catch;
 
 // Prototypes here.
@@ -163,7 +159,3 @@ init()
    add_action("filein", "filein");
    add_action("fileout", "fileout");
 }
-
-#ifdef DOXYGEN
-};
-#endif

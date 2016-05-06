@@ -1,9 +1,6 @@
 /** This object contains some utility functions to check recipe matching, and
  * may also be used to store recipes.
  */
-#ifdef DOXYGEN
-struct Recipe {
-#endif
 
 mapping recipes;
 mapping diff;
@@ -393,7 +390,3 @@ void create() {
    // gems
    ]);
 }
-
-#ifdef DOXYGEN
-};
-#endif

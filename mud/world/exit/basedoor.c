@@ -9,10 +9,6 @@
 #include <desc.h>
 inherit "/world/exit/twoway";
 
-#ifdef DOXYGEN
-struct Door {
-#endif
-
 void on_action( object target );
 
 DISTANT( "a door" )
@@ -195,7 +191,3 @@ object id( string param ) {
 int query_out_backlink() {
    return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

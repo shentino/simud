@@ -2,8 +2,4 @@ WIZARD HELP
 OFFEDIT
 There is an elderly object in the /obj directory, called the
 "offline editor." It is the very first editor we made available for the MUD.
-You use it by typing ~CCOMclone /obj/offedit~CHLP. Minimal instructions on
-using its commands may be found on the web page (type ~CCOMhelp
-doxygen~CHLP).
-
-See also: ~CREFdoxygen~CHLP
+You use it by typing ~CCOMclone /obj/offedit~CHLP.

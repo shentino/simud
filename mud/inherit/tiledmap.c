@@ -8,10 +8,6 @@
  * of things.
  */
 
-#ifdef DOXYGEN
-struct Tiledmap {
-#endif
-
 /// The grid itself.
 string grid;
 /// A table (array) of the meanings of the various grid indices. Translates the grid into something meaningful.
@@ -292,8 +288,3 @@ int set_grid_value( int i, string val ) {
 int query_has_map() {
    return 1;
 }
-
-
-#ifdef DOXYGEN
-};
-#endif

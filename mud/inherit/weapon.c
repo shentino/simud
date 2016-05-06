@@ -1,9 +1,5 @@
 /// \todo Document this file
 
-#ifdef DOXYGEN
-struct Weapon {
-#endif
-
 mapping wc;            // weapon class. ex (["edged":3, "blunt":5])
 mapping requirements;  // requirements to wield weapon
 int hitbonus;          // bonus % to hit
@@ -259,7 +255,3 @@ string query_material_string() {
 	else
 		return "*bugged*";
 }
-
-#ifdef DOXYGEN
-};
-#endif

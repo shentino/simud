@@ -15,9 +15,6 @@
 #define DB "/secure/db_saveload"	// object for using db to save
 
 /// Makes objects capable of saving and reloading when the mud reboots.
-#ifdef DOXYGEN
-struct Saveload {
-#endif
 
 /// The .c file from which this object was created.
 nosave string my_file_name;
@@ -177,7 +174,3 @@ void set_unique_id( int x ) {
    unique_id = x;
    ID_MONITOR->check_id( unique_id );
 }
-
-#ifdef DOXYGEN
-};
-#endif

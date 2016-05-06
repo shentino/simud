@@ -189,10 +189,6 @@ varargs object full_restore_object( string file, int force_uid ) {
  * the one used.
  */
 
-#ifdef DOXYGEN
-struct World : public Area {
-#endif
-
 /** Returns the world's .o file in a string.
  */
 string get_stat() {
@@ -314,7 +310,3 @@ string query_name() {
    name = "world";
    return ::query_name();
 }
-
-#ifdef DOXYGEN
-};
-#endif

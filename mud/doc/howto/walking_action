@@ -21,10 +21,8 @@ walk to. The arrive_action is an action (in the array format) which will
 be performed when you get there.
 
 The target_area is a mapping describing a shape. There are several
-standard shapes available in the walk daemon itself
-(all the functions whose names being with "shape"). You should check the
-doxygen to find out which shapes are available, and to learn a bit
-more about them.
+standard shapes available in the walk daemon itself (all the functions
+whose names being with "shape").
 
 The target_coord is a coordinate (you can build coordinates using the
 MAKE_C macro in const.h). The shape given by target_area is offset so that

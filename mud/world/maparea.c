@@ -9,10 +9,6 @@ inherit "/world/area";
  * as terrain instead of a key on rooms.
  */
 
-#ifdef DOXYGEN
-struct Maparea : public Inven, public Desc, public Tiledmap, public Object {
-#endif
-
 string *adjacent_areas;
 string *minerals;
 
@@ -259,7 +255,3 @@ mapping query_nearby_area( int x, int y, int z ) {
    if( x < 0 || x >= query_xdim() || y < 0 || y >= query_ydim() ) return 0;
    return ([ "object" : this_object(), "x" : x, "y" : y, "z" : z ]);
 }
-
-#ifdef DOXYGEN
-};
-#endif

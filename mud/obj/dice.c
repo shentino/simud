@@ -21,9 +21,6 @@
  */
 
 /// Inheritable or externally callable object for rolling dice.
-#ifdef DOXYGEN
-struct Dice {
-#endif
 
 /**
  * Call this function to emulate rolling of \a num dice with \a sides spots each.
@@ -41,7 +38,3 @@ int roll( int num, ///< Number of dice to roll
 
    return total;
 }
-
-#ifdef DOXYGEN
-};
-#endif

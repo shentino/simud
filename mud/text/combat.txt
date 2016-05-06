@@ -94,8 +94,7 @@ queue. If query_autoready() is false, this function does nothing.
 get_battle_action()
 
 Returns the battle action on the front of the combat queue *without* popping
-it off. If there is none, it returns query_default_action(). See the doxygen
-for this function for the format of the queue (it's rather complex).
+it off. If there is none, it returns query_default_action().
 
 ---
 

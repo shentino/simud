@@ -13,10 +13,6 @@ ALT_PLURAL( ({ "pads" }) )
 /** A device used for building puzzles or triggered systems.
  */
 
-#ifdef DOXYGEN
-struct PortPad : public Desc, public Shape, public Exit {
-#endif
-
 /// See set_mode() for possible values.
 string mode;
 int dest_coord;
@@ -154,7 +150,3 @@ int exit_action() {
 int query_is_exit() {
    return query_active();
 }
-
-#ifdef DOXYGEN
-};
-#endif

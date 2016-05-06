@@ -37,9 +37,6 @@
  * understand how logging on works, you should review this function carefully.
  */
 /// Defines the player object
-#ifdef DOXYGEN
-struct Player : public Living, public Keyboard, public Textdraw, public Interface {
-#endif
 
 /**************************************************** FORWARD DECLARATIONS */
 
@@ -1833,7 +1830,3 @@ void receive_message(string class, string msg)
 }
 
 //@}
-
-#ifdef DOXYGEN
-};
-#endif

@@ -15,9 +15,6 @@
  * lets you type in those codes, so that your keyboard settings will work
  * properly.
  */
-#ifdef DOXYGEN
-struct Keysetup {
-#endif
 
 /// Call this function to start the keyboard setup interface.
 setup() {
@@ -151,7 +148,3 @@ void key_menu(string s) {
       this_player()->remove_key_code( i );
    }
 }
-
-#ifdef DOXYGEN
-};
-#endif

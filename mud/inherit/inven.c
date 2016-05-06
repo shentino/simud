@@ -11,9 +11,6 @@
  */
 
 /// Inheritable object which makes their inheritor capable of saving its inventory.
-#ifdef DOXYGEN
-struct Inven : public Saveload {
-#endif
 
 private nosave int loaded = 0;
 
@@ -119,7 +116,3 @@ void sub_save(object ob) {
 #endif
    ob->save_self();
 }
-
-#ifdef DOXYGEN
-};
-#endif

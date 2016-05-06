@@ -32,10 +32,6 @@
  * which is not handled properly, go ahead and add it in here.
  */
 
-#ifdef DOXYGEN
-struct Dictionary {
-#endif
-
 /** Conjugates an English verb in the present tense. This should
  * work for all English verbs; failing on any verb is considered a
  * bug and ought to be fixed.
@@ -323,8 +319,3 @@ string a_an( string word ) {
    else
       return "a";
 }
-
-
-#ifdef DOXYGEN
-};
-#endif

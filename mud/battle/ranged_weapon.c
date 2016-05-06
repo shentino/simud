@@ -2,10 +2,6 @@ inherit "/battle/weapon";
 
 /// \todo Document this file
 
-#ifdef DOXYGEN
-struct Weapon : public Battle, public Item, public Weapon {
-#endif
-
 int range;
 int ammo;
 int max_ammo;
@@ -60,7 +56,3 @@ create() {
    ::create();
    range = 2;
 }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -33,10 +33,6 @@
  * Object data itself is stored under /data.
  */
 
-#ifdef DOXYGEN
-struct Odin {
-#endif
-
 #define MAX_ID_GROWTH 200000
 
 /// A mapping of all the currently unused ID's that are less than max_id
@@ -171,7 +167,3 @@ string get_save_file_name( int id ) {
 
    return dir + "/" + hexval;
 }
-
-#ifdef DOXYGEN
-};
-#endif

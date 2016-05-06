@@ -1,9 +1,5 @@
 /// \todo Document locks
 
-#ifdef DOXYGEN
-struct Lock {
-#endif
-
 // Volatile between clones; not worth using vars mappings on either of these.
 string keycode;
 int locked;
@@ -23,7 +19,3 @@ void set_locked( int x ) {
 int query_locked() {
    return locked;
 }
-
-#ifdef DOXYGEN
-};
-#endif

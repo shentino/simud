@@ -5,10 +5,6 @@ string mymap;
 /** An object for generating ASCII maps.
  */
 
-#ifdef DOXYGEN
-struct Maps {
-#endif
-
 string *bottom_row = ({
  "'---'",
  "'----",
@@ -741,7 +737,3 @@ int query_zlevel( int type ) {
    if( type < 0 || type >= sizeof(ztab) - 1 ) return LAYER_INVALID;
    return ztab[type+1];
 }
-
-#ifdef DOXYGEN
-};
-#endif

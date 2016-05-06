@@ -11,10 +11,6 @@
  * verb. For example, /bin/give->on_accept(param).
  */
 
-#ifdef DOXYGEN
-struct Accept {
-#endif
-
 /// Verb that cloned this object in the first place
 object verb;
 
@@ -91,7 +87,3 @@ void on_time_out() {
    msg_object( environment(this_object()), "You are not responding. Automatically rejecting the request." );
    on_reject();
 }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -52,9 +52,6 @@
  * in directories, append a "/" to their name.
  *
  */
-#ifdef DOXYGEN
-struct File_security {
-#endif
 
 /* A quicky macro. It should consist of code to make sure that whatever
  * object called this function is trusted to modify file access data.
@@ -540,7 +537,3 @@ int query_allow_set( object caller, object callee ) {
    if( uid_list && member(uid_list, callee_uid) >= 0 ) return 1;
    return 0;
 }
-
-#ifdef DOXYGEN
-};
-#endif

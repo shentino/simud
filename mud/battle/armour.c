@@ -8,10 +8,6 @@
 /** \todo Document this file
  */
 
-#ifdef DOXYGEN
-struct Armour : public Battle, public Apparel {
-#endif
-
 int base_ac;      // general armour class (applies to all types)
 mapping ac_mod;      // armour class. ex (["edged":3, "blunt":-5])
 mapping requirements;   // requirements to wear armour
@@ -299,7 +295,3 @@ void create() {
 int query_armour() {
    return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

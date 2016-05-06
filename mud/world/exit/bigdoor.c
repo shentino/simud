@@ -10,10 +10,6 @@
 #include <lockable.h>
 inherit "/world/exit/twoway";
 
-#ifdef DOXYGEN
-struct Door {
-#endif
-
 void on_action( object target );
 
 LOOK( "A rather ordinary looking wooden door. It is capable of opening and closing." )
@@ -216,7 +212,3 @@ object id( string param ) {
 int query_out_backlink() {
    return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

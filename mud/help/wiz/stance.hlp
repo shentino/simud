@@ -3,9 +3,3 @@ STANCE
 Stance is an attribute used in combat to determine the kinds
 of actions you can do. It's easy to change from stance to stance, and
 simply adds to the readiness cost of performing an action.
-
-If you are actually interested in the short messages displayed by players
-or NPC's in the room description, then you should look up "doing" strings
-in the living object in the doxygen.
-
-See also: ~CREFdoxygen

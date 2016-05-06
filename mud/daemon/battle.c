@@ -12,10 +12,6 @@
 
 /// \todo Document this file.
 
-#ifdef DOXYGEN
-struct Battle {
-#endif
-
 /** Returns an array containing objects wielded by who. If type is
  * declared (either as a single string or as an array of strings), the
  * function will only return those weapons of the appropriate type (sword,
@@ -422,7 +418,3 @@ int calc_dmg_by_rules( mapping wc, int bp, object *inven_data, object target_obj
 
    return (int)total;
 }
-
-#ifdef DOXYGEN
-};
-#endif

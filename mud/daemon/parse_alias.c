@@ -3,10 +3,6 @@
  * (Thanks Stormdragon), slightly modified by Acius.
  */
 
-#ifdef DOXYGEN
-struct Parse_alias {
-#endif
-
 /** Converts the command in \a com according to the
  * alias templated in \a str into a normal command
  * string. Substring substitution with $1, $2, $* or
@@ -92,7 +88,3 @@ varargs string parse_alias(string str, string com, string verb) {
   }
   return out;
 }
-
-#ifdef DOXYGEN
-};
-#endif

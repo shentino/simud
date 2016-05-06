@@ -6,10 +6,6 @@
  * sure that player inventories stay active (i.e. the objects still exist
  */
 
-#ifdef DOXYGEN
-struct Bank : public Inven, public Desc, public Object {
-#endif
-
 /** Initialize the inventory bank to its default values.
  */
 create() {
@@ -62,7 +58,3 @@ void postsave() {
    foreach( player : users() )
       player->restore_bubble();
 }
-
-#ifdef DOXYGEN
-};
-#endif

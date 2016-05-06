@@ -20,9 +20,6 @@
  * you want to get rid of maps. Most of the code that uses it is
  * designed to work even if no map is available.
  */
-#ifdef DOXYGEN
-struct Map_paint : public Coord {
-#endif
 
 // Prototypes
 void paint_map( string name );
@@ -1020,7 +1017,3 @@ string query_obj_overlay( object ob ) {
    paint_record = 0; // Conserve memory.
    return ret;
 }
-
-#ifdef DOXYGEN
-};
-#endif

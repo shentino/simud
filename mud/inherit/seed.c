@@ -8,10 +8,6 @@
  * a new plant.
  */
 
-#ifdef DOXYGEN
-struct Seed {
-#endif
-
 /// The file name of the plant template (i.e. /econ/plants/...)
 string plant_type;
 
@@ -55,7 +51,3 @@ int on_plant( int pos ) {
 string seed_info() {
    return "plant_type\nseed_strength";
 }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -12,10 +12,6 @@
 #include <quantity.h>
 #include <stackobj.c>
 
-#ifdef DOXYGEN
-struct Coins {
-#endif
-
 NAME( "coin" )
 DISTANT( "a coin" )
 SPECIFIC( "the coin" )
@@ -39,7 +35,3 @@ void create() {
 int query_is_money() {
    return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

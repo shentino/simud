@@ -4,10 +4,6 @@
  * Can be medals, armour, whatever.
  */
 
-#ifdef DOXYGEN
-struct Faction_marker {
-#endif
-
 string faction;
 
 /** Marks that this item identifies a faction.
@@ -36,7 +32,3 @@ int on_remove() {
    this_player()->remove_var( "faction" );
    return 0; // Remove it normally.
 }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -10,10 +10,6 @@
 // Prototypes:
 mapping query_exit( string dir );
 
-#ifdef DOXYGEN
-struct Exits : public Object {
-#endif
-
 // A mapping of all the exit information in this object.
 // Deleted, not used anymore.
 // mapping exits;
@@ -109,7 +105,3 @@ void _create_exits() {
    tlistlen = 5;
    tracklist = allocate(tlistlen);
 }
-
-#ifdef DOXYGEN
-};
-#endif

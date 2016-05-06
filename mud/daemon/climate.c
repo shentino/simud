@@ -13,10 +13,6 @@
  * To create your own weather patterns, take a peek at the create() function.
  */
 
-#ifdef DOXYGEN
-struct Climate {
-#endif
-
 // Array lookup positions
 #define WP_DESC  0
 #define WP_TYPE  1
@@ -215,7 +211,3 @@ string query_weather_desc( string climate, string weather ) {
    if( !climate || !weather ) return 0;
    return climates[climate][weather][WP_DESC];
 }
-
-#ifdef DOXYGEN
-};
-#endif

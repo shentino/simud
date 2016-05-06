@@ -3,7 +3,4 @@ AREAS
 Areas are special objects used for organizing rooms and other areas into a
 hierarchy. They may have descriptions, and may
 have exits (at least for now). They are still in flux, so it is difficult
-to give accurate help on them right now :-). Check the doxygen for the
-latest information.
-
-See also: ~CREFdoxygen
+to give accurate help on them right now :-).

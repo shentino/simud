@@ -20,10 +20,6 @@
  * rooms.
  */
 
-#ifdef DOXYGEN
-struct Area : public Inven, public Desc, public Tiledmap, public Object {
-#endif
-
 /// An internal cache of room objects, stored as a mapping. Update the object to refresh it.
 nosave mapping room_map;
 
@@ -139,7 +135,3 @@ string query_weather_desc() {
 int query_is_area() {
    return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

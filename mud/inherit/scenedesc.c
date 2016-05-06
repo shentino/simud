@@ -6,10 +6,6 @@
  * of the description ... except in brief mode).
  */
 
-#ifdef DOXYGEN
-struct Scenedesc {
-#endif
-
 /// Scenedesc variables; see their functions for more information
 string phrase, position, preposition, closing_phrase;
 
@@ -87,7 +83,3 @@ string query_scene_phrase() {
  * piece of scenery to revert to a normal object, if desired.
  */
 int query_scenery() { return stringp(query_phrase()); }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -5,10 +5,6 @@
  * improve.
  */
 
-#ifdef DOXYGEN
-struct Form {
-#endif
-
 #include <battle.h>
 
 string query_name() { return "generic form"; }
@@ -67,7 +63,3 @@ int query_form_level(int x) {
   }
   return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

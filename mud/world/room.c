@@ -8,10 +8,6 @@
 
 /// \todo Write this summary.
 
-#ifdef DOXYGEN
-struct Room : public Desc, public Extra_desc, public Inven, public Exits, public Map_paint, public Object {
-#endif
-
 DISTANT( "the ground" )
 SPECIFIC( "the ground" )
 CAN_BUILD( 0 )
@@ -124,7 +120,3 @@ void set_no_teleport( int x ) {
 object id( string s ) {
    return (s == name || s == "the ground")? this_object() : 0;
 }
-
-#ifdef DOXYGEN
-};
-#endif

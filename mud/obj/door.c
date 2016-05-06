@@ -7,10 +7,6 @@
 /** This is the door object.
  */
 
-#ifdef DOXYGEN
-struct Door : public Desc, public Saveload, public Scenery {
-#endif
-
 /// This flag is set to true if this door is closed, false if it's open.
 int closed;
 
@@ -55,7 +51,3 @@ int query_blocked() { return closed; }
 
 /// Sets the value of the closed flag to \a x.
 void set_closed( int x ) { closed = x; }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -29,9 +29,6 @@
  * it retrieves them.
  */
 /// Defines "simulated external functions" which may be called from any object.
-#ifdef DOXYGEN
-struct Simul_efun {
-#endif
 
 // Prototypes
 string file_name( object ob );
@@ -2634,7 +2631,3 @@ varargs void refresh_room( object room, object actor ) {
    foreach( ob : filter(all_inventory(room), (: $1->query_client_code() == "wclient" :)) )
       efun::command( "_wfovr", ob );
 }
-
-#ifdef DOXYGEN
-};
-#endif

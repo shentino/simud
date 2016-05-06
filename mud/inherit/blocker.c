@@ -9,10 +9,6 @@
  * or passes someone, etc.
  */
 
-#ifdef DOXYGEN
-struct Blocker {
-#endif
-
 /// A function used by the object editor to find internal variables.
 string blocker_info() { return "block_message\nblock_visible\npass_message"; }
 
@@ -42,7 +38,3 @@ void set_pass_message( string x ) { pass_message = x; }
 
 /// Sets the block_visible flag.
 void set_block_visible(int x) { block_visible = x; }
-
-#ifdef DOXYGEN
-};
-#endif

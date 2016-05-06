@@ -1,10 +1,8 @@
-Manipulating player stats is pretty simple. Use doxygen to find the stat
-that you're looking for (help doxygen for more info). The best place to
-look is the Living object (you can find it under the Alphabetical List).
+Manipulating player stats is pretty simple.  The best place to look is
+the Living object (you can find it under the Alphabetical List).
 
-The Doxygen will give you the names of the query_ and set_ functions for
-the stat that you want to change. All you need to do is call the
-relevant function in the right object. For example:
+All you need to do is call the relevant function in the right object. For
+example:
 
 this_player()->set_strength(15);
 

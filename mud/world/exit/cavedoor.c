@@ -8,10 +8,6 @@
 #include <coord.h>
 inherit "/world/exit/twoway";
 
-#ifdef DOXYGEN
-struct Cavedoor {
-#endif
-
 /** The shape depends on the direction of the exit. North/south
  * exits are a horizontal strip five chars wide; East/west are
  * a vertical strip 3 high. Upward exits are <<, and downward
@@ -136,7 +132,3 @@ string query_action_name( mixed *param ) {
 int query_out_backlink() {
    return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

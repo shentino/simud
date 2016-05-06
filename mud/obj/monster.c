@@ -7,10 +7,6 @@
  * living object with minor extensions.
  */
 
-#ifdef DOXYGEN
-struct Monster : public Living, public Inven {
-#endif
-
 object possessor;
 
 // for butchering
@@ -232,7 +228,3 @@ void set_random_stats() {
    foreach( stat : stats )
       this_object()->set_stat(stat, range(race->query_stat_max(stat)) );
 }
-
-#ifdef DOXYGEN
-};
-#endif

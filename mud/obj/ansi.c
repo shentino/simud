@@ -2,10 +2,6 @@
  * As a rule, you should not need to call functions in this object.
  */
 
-#ifdef DOXYGEN
-struct Ansi {
-#endif
-
 /// A string of length one containing the ESCAPE character (ASCII #27)
 string ESCAPE;
 
@@ -222,7 +218,3 @@ ansitest3() {
    write("==> [AnsiTest] Test completed. Now returning to the MUD.\n");
    this_player()->set_curr_prompt();
 }
-
-#ifdef DOXYGEN
-};
-#endif

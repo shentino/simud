@@ -3,10 +3,6 @@
 /** Used for items of clothing or apparel. Need more docs here...
  */
 
-#ifdef DOXYGEN
-struct Apparel {
-#endif
-
 int worn;           ///< 1 if worn
 //int flexible;       ///< whether or not the item can bend
 //int size;           ///< 0..50 (humans can wear sizes 12..28)

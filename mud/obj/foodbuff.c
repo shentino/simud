@@ -9,9 +9,6 @@
  * At present, only basic stat increase-type bonuses work, but others
  * will be forthcoming.
  */
-#ifdef DOXYGEN
-struct FoodBuff : public Object {
-#endif
 
 /**
  * buffmap = ([ "food item": buffstruct ])
@@ -160,7 +157,3 @@ void on_tick() {
 		destruct(this_object());
 	}
 }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -8,10 +8,6 @@
 
 /// \todo Document this file
 
-#ifdef DOXYGEN
-struct WeaponObj : public Battle, public Desc, public Item, public Object, public Weapon, public Inven {
-#endif
-
 ICON( '(', 7, 1 )
 
 mapping query_aspects() {
@@ -41,7 +37,3 @@ int on_give( object actor ) {
     // Note: I disagree with the 'no error'! but what kind of error should it give?
   return MOVE_OK_FLAG;
 }
-
-#ifdef DOXYGEN
-};
-#endif

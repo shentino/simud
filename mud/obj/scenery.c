@@ -20,10 +20,6 @@
  * which you can hide objects, secrete yourself, etc.
  */
 
-#ifdef DOXYGEN
-struct Scenery : public Desc, public Inven, public Scenedesc, public Coord, public Object {
-#endif
-
 NAME( "scenery" )
 DISTANT( "a piece of scenery" )
 SPECIFIC( "the scenery" )
@@ -55,7 +51,3 @@ string destructor( object ob ) {
    if( environment() ) environment()->clear_map();
    return ::destructor(ob);;
 }
-
-#ifdef DOXYGEN
-};
-#endif

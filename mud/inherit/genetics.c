@@ -4,9 +4,6 @@
  */
 
 /// Code stolen and modified from /obj/living.c's environment variable code.
-#ifdef DOXYGEN
-struct Genetics {
-#endif
 
 #define DOMINANT   0
 #define RECESSIVE  1
@@ -165,7 +162,3 @@ void on_birth( string *whos ) {
 
    set_traits();
 }
-
-#ifdef DOXYGEN
-};
-#endif

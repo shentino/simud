@@ -1,9 +1,4 @@
-
 /// To be documented.
-
-#ifdef DOXYGEN
-struct Shut : public Common {
-#endif
 
 int seconds_to_live;
 int shutdown_in_progress = 0;
@@ -59,7 +54,3 @@ void pull_the_plug() {
 int query_shutdown_in_progress() {
    return shutdown_in_progress;
 }
-
-#ifdef DOXYGEN
-};
-#endif

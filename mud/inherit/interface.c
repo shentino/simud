@@ -9,10 +9,6 @@
 
 #include <const.h>
 
-#ifdef DOXYGEN
-struct Interface {
-#endif
-
 /// Functions providing the interface
 nosave string *ifuncs;
 /// ... and the objects providing the interface.
@@ -179,7 +175,3 @@ object query_interface() {
    if( iobjs ) return iobjs[0];
    return 0;
 }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -11,10 +11,6 @@
  * test against the mapping given here.
  */
 
-#ifdef DOXYGEN
-struct Walk {
-#endif
-
 /** This shape contains a single point at the origin.
  */
 mapping shape_point() {
@@ -341,7 +337,3 @@ string query_action_name( mixed *param ) {
       !param[B_PARAM][2][B_FNAME] ) return "(Unknown walk action)";
    return param[B_PARAM][2][B_FNAME]->query_action_name(param[B_PARAM][2]);
 }
-
-#ifdef DOXYGEN
-};
-#endif

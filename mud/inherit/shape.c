@@ -7,10 +7,6 @@
  * you should look at the Spots component.
  */
 
-#ifdef DOXYGEN
-struct Shape {
-#endif
-
 /// Cache storage of this object's shape and its border.
 nosave mapping shape, border;
 
@@ -64,7 +60,3 @@ mapping query_border() {
 void set_border( mapping m ) {
    border = m;
 }
-
-#ifdef DOXYGEN
-};
-#endif

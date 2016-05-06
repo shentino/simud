@@ -1,10 +1,6 @@
 #include <object.h>
 #include <sql.h>
 
-#ifdef DOXYGEN
-struct Phpbb : public Sql {
-#endif
-
 /** Connect to the MySQL database when the object is loaded.
  */
 void create() {
@@ -101,7 +97,3 @@ void create_new_topic( int forum_id, string topic_name, string message ) {
    request( "update topics set topic_last_post_id = "+post_id+" where topic_id = '"+topic_id+"'" );
    request( "update forums set forum_posts = forum_posts+1, forum_topics = forum_topics+1, forum_last_post_id = "+post_id+" WHERE forum_id = '"+forum_id+"'" );
 }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -10,9 +10,6 @@
  * off. You should check this with this_player()->query_ansi(), which
  * will return true if the player has ANSI turned on.
  */
-#ifdef DOXYGEN
-struct Textdraw : public List {
-#endif
 
 /** Figures out the ~ codes to do an adjusted gotoxy.
  * Although there is no limit on the absolute coordinates
@@ -574,7 +571,3 @@ static varargs void line_input( int _xleft, int _width, int _line, int _curs, st
    add_interface("@line_input_interface", 0);
    display_line_input();
 }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -12,9 +12,6 @@
  * The name of this object on the mud is "hunger_ob". You can use this
  * name in "present()" to check for it.
  */
-#ifdef DOXYGEN
-struct Hunger : public Object {
-#endif
 
 void on_move() {
    if (!environment()->query_is_living())
@@ -100,7 +97,3 @@ void on_hunger() {
    }
    destruct(this_object());
 }
-
-#ifdef DOXYGEN
-};
-#endif

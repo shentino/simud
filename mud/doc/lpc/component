@@ -11,8 +11,7 @@ inven -- Makes it last through reboots
 object -- Make it clonable
 
 These individual puzzle pieces are called components. You can use them
-with #include <component.h>. You can then check the doxygen to find out
-what the component does. If all you're going to do is use a component,
+with #include <component.h>.  If all you're going to do is use a component,
 then this is all you need to know.
 
 If you want to make new components, then read on :-).

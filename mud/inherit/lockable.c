@@ -1,9 +1,5 @@
 /// \todo Must document this. Later.
 
-#ifdef DOXYGEN
-struct Lockable {
-#endif
-
 int query_closed() {
    QBODY( "closed", 0 );
 }
@@ -68,7 +64,3 @@ int on_close() {
    this_object()->set_closed( 1 );
    return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -330,7 +330,3 @@ varargs string restore_sub_object( string file, string obj, int force_uid ) {
 
    return base_ob;
 }
-
-#ifdef DOXYGEN
-};
-#endif

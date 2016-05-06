@@ -15,4 +15,4 @@ If you want a list of all the objects inside of something (rooms in an area, ite
 This is a highly outdated object, only kept because it is good code and some of the older stuff is still using it. Lists are basically an implementation of arrays using strings, since LP/C did not
 used to support arrays. For new code, you should use arrays. For information on the list object, check the Doxygen documentation.
 
-See also: ~CREFls~CHLP, ~CREFwinven~CHLP, ~CREFdoxygen~CHLP
+See also: ~CREFls~CHLP, ~CREFwinven~CHLP

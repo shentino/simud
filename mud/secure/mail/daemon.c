@@ -1,10 +1,6 @@
 #include <object.h>
 #include <sql.h>
 
-#ifdef DOXYGEN
-struct Mail : public Sql {
-#endif
-
 // Constant(s)
 #define ANONYMOUS_UID 1
 
@@ -142,7 +138,3 @@ void send_message(string from, string to, string subject, string text) {
      }
    }
 }
-
-#ifdef DOXYGEN
-};
-#endif

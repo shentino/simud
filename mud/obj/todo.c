@@ -2,10 +2,6 @@
 
 /// \todo Document this object
 
-#ifdef DOXYGEN
-struct Todo {
-#endif
-
 string *todo_titles = ({});
 string *todo_dates = ({});
 string *todo_messages = ({});
@@ -72,7 +68,3 @@ void set(int number,string message) {
    todo_update[number] = (string)this_player()->query_real_name();
    save_object(TODO_FILE);
 }
-
-#ifdef DOXYGEN
-};
-#endif

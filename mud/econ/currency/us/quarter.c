@@ -8,10 +8,6 @@
 #include <quantity.h>
 #include <stackobj.c>
 
-#ifdef DOXYGEN
-struct Coins {
-#endif
-
 NAME( "quarter" )
 ALT_NAME( ({ "coin" }) )
 DISTANT( "a quarter" )
@@ -42,7 +38,3 @@ string query_issuing_government() {
 int query_is_money() {
    return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

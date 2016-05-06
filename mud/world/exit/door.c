@@ -5,10 +5,6 @@ inherit "/world/exit/basedoor";
  * close, and have locks installed.
  */
 
-#ifdef DOXYGEN
-struct Door {
-#endif
-
 LOOK( "~Name is a rather ordinary looking wooden door. It is capable of opening and closing. Currently, it is ?(ISCLOSED:closed):(open)." )
 PLURAL( "doors" )
 
@@ -78,7 +74,3 @@ int on_close() {
    }
    return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

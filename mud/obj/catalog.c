@@ -23,10 +23,6 @@
  * (30 minutes of game time).
  */
 
-#ifdef DOXYGEN
-struct Catalog {
-#endif
-
 /// The mapping containing the catalog.
 mapping catalog;
 
@@ -60,7 +56,3 @@ int set_catalog( mapping m ) {
    save_object("/data/catalog");
    return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

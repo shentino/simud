@@ -8,10 +8,6 @@
  * certain functions.
  */
 
-#ifdef DOXYGEN
-struct Object {
-#endif
-
 /** This variable is considered 'internal.' It is initialized when
  * this object is created, and contains the names of all functions
  * in this object which are considered constructors or destructors.
@@ -230,7 +226,3 @@ void on_restore() {
   foreach( ob : all_inventory(this_object()) )
     ob->on_restore();
 }
-
-#ifdef DOXYGEN
-};
-#endif

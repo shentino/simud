@@ -8,10 +8,6 @@
 #include <quantity.h>
 #include <stackobj.c>
 
-#ifdef DOXYGEN
-struct Coins {
-#endif
-
 NAME( "dime" )
 ALT_NAME( ({ "coin" }) )
 DISTANT( "a dime" )
@@ -47,7 +43,3 @@ void on_split(object source)
 {
    this_player()->msg_local("~CACTThe coins jingle as you manipulate them.~CDEF");
 }
-
-#ifdef DOXYGEN
-};
-#endif

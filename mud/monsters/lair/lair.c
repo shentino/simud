@@ -5,10 +5,6 @@
  * if they're not hungry and have nothing else to do.
  */
 
-#ifdef DOXYGEN
-struct Lair : public Object {
-#endif
-
 string animal_type;
 
 string query_animal_type() {
@@ -65,7 +61,3 @@ void breed() {
 int query_is_lair() {
    return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

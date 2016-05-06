@@ -11,10 +11,6 @@
  * Derived guild objects, however, are welcome to make this assumption.
  */
 
-#ifdef DOXYGEN
-struct Guild {
-#endif
-
 /** Informs a player/living creature of an event that has occurred. This
  * is done by calling the function \a message_type in the player/living's
  * guild object passing it \a message_data and \a dest.
@@ -64,7 +60,3 @@ string showready( int val ) {
 
    show_meter = this_player()->query_autoready();
 }
-
-#ifdef DOXYGEN
-};
-#endif

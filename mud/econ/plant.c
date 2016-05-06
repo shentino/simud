@@ -3,10 +3,6 @@
 #include <object.h>
 #include <const.h>
 
-#ifdef DOXYGEN
-struct Plant {
-#endif
-
 int state;
 nosave int crowded;
 
@@ -384,7 +380,3 @@ void set_coord( int pos ) {
 mapping query_aspects() {
    return ([ C_PLANT ]);
 }
-
-#ifdef DOXYGEN
-};
-#endif

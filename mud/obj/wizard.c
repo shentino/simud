@@ -21,10 +21,6 @@
  * on the fly.
  */
 
-#ifdef DOXYGEN
-struct Wizard : public Common {
-#endif
-
 /** Converts a reference into an object pointer. You should only
  * pass in one parameter; the second \a rcheck parameter is used
  * internally.
@@ -191,7 +187,3 @@ string exec_code(string code) {
 
    return as_lpc(ret);
 }
-
-#ifdef DOXYGEN
-};
-#endif

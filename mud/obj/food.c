@@ -10,10 +10,6 @@
 // They should now, putting it back -- Acius [2004.09.12]
 #include <quantity.h>
 
-#ifdef DOXYGEN
-struct Food : public Edible, Item, Desc, Object, Saveload, Decay {
-#endif
-
 // Removed this one as well, and moved it up from the bottom of the bloody file
 // ... it was at the bottom because it's not a .h file. It certainly must
 // NOT be above the struct declaration or you'll break stuff that won't
@@ -56,8 +52,3 @@ void on_decay( int decay ) {
       msg_room(environment(), "~CACT~Name ~verbdecay away to nothing." );
    }
 }
-
-
-#ifdef DOXYGEN
-};
-#endif

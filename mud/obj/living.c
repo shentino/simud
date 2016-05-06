@@ -18,9 +18,6 @@
 
 /** This object is inherited by all living objects. */
 /// Properties and behaviors possessed by all living objects.
-#ifdef DOXYGEN
-struct Living : public Desc, public Dice, public Battle, public Item {
-#endif
 
 // Properties and handling functions of a living object.
 // All living objects possess these stats.
@@ -3858,7 +3855,3 @@ void walkto( mixed dest ) {
    pop_action();
    set_this_player( oldtp );
 }
-
-#ifdef DOXYGEN
-};
-#endif

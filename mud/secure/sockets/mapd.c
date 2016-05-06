@@ -1,9 +1,5 @@
 #include "socket.h"
 
-#ifdef DOXYGEN
-struct Httpd {
-#endif
-
 #define Debug(x)
 
 
@@ -122,7 +118,3 @@ void destructor()
     if (sock<0) return;
     SOCKETD->socket_close(sock);
 }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -11,10 +11,6 @@
  * unit of wall might be one spot, but 5x3 units in the shape.
  */
 
-#ifdef DOXYGEN
-struct Spots {
-#endif
-
 /// A mapping of coordinates. See Coord for more information.
 mapping spots = ([ ]);
 
@@ -46,7 +42,3 @@ void remove_spot( int pos ) {
    spots -= ([ pos ]);
    this_object()->set_shape( 0 );
 }
-
-#ifdef DOYGEN
-};
-#endif

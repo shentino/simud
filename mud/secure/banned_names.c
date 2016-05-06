@@ -15,9 +15,6 @@
  *
  * There should be wizard commands which deal with this object.
  */
-#ifdef DOXYGEN
-struct Banned_names {
-#endif
 
 /// An array of regular expressions -- all the banned names.
 string *banned_names;
@@ -103,7 +100,3 @@ void add_banned_expression( string name ) {
 
    save_object( "/secure/banned_names" );
 }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -11,10 +11,6 @@
 #include <const.h>
 #include <coord.h>
 
-#ifdef DOXYGEN
-struct Item {
-#endif
-
 // Prototypes
 void set_bulk( int n );
 void set_weight( int n );
@@ -336,7 +332,3 @@ _reset_item() {
 void set_material( string x ) {
    debug("set_material is deprecated, used in " + program_name(this_object()) + ". Please update code!");
 }
-
-#ifdef DOXYGEN
-};
-#endif

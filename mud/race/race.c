@@ -41,10 +41,6 @@ struct body_part {
  * outside of the source anyhow... shrug. -- Al [8.8.02]
  */
 
-#ifdef DOXYGEN
-struct Race {
-#endif
-
 /** Names of the body parts, with their bitflags as keys.
  *
  * I have extended this mapping to also include data on the size of the
@@ -270,7 +266,3 @@ void create() {
 //   bp_map = m_allocate(0,3);
    set_bp_flags( BT_HUMANOID );
 }
-
-#ifdef DOXYGEN
-};
-#endif

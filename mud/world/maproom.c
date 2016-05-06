@@ -7,10 +7,6 @@
 
 /// \todo Write this summary.
 
-#ifdef DOXYGEN
-struct Maproom : public Desc, public Extra_desc, public Inven, public Exits, public Resource, public Object, public Coord {
-#endif
-
 CAN_BUILD( 1 )
 TASTE( "It tastes, well, like dirt." )
 
@@ -154,7 +150,3 @@ int query_map_room() {
 int query_is_map_room() {
    return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

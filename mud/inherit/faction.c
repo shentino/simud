@@ -6,14 +6,6 @@
  * and need an automated way to differentiate friend from foe.
  */
 
-#ifdef DOXYGEN
-struct Faction {
-#endif
-
 void set_faction( string x ) { SBODY( "faction", x ); }
 
 string query_faction() { QBODY( "faction", this_object()->query_name() ); }
-
-#ifdef DOXYGEN
-};
-#endif

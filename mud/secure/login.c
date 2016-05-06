@@ -2,9 +2,6 @@
 #include <file_security.h>
 
 /// An object that handles player's logins.
-#ifdef DOXYGEN
-struct Login {
-#endif
 
 object newplayer;
 string name, password; /**< The player's password. */
@@ -296,7 +293,3 @@ void enter_world() {
 
    destruct(this_object());
 }
-
-#ifdef DOXYGEN
-};
-#endif

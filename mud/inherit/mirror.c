@@ -6,10 +6,6 @@
  * locked, etc.
  */
 
-#ifdef DOXYGEN
-struct Mirror {
-#endif
-
 /// Stores the master object. Should survive a reboot, though won't work for non-saveload stuff too well.
 symbol master_ob;
 
@@ -34,7 +30,3 @@ int catch_call( mixed result, string func, varargs args ) {
 int query_is_mirror() {
    return previous_object() == query_master_ob();
 }
-
-#ifdef DOXYGEN
-};
-#endif

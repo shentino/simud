@@ -19,10 +19,6 @@ inherit "/world/area";
  * the one used.
  */
 
-#ifdef DOXYGEN
-struct World : public Area {
-#endif
-
 // This code is specialized stuff used for saving...
 
 string dump_object_data( object ob ) {
@@ -362,7 +358,3 @@ string query_name() {
    name = "world";
    return ::query_name();
 }
-
-#ifdef DOXYGEN
-};
-#endif

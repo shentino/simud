@@ -1,10 +1,6 @@
 #include <object.h>
 #include <sql.h>
 
-#ifdef DOXYGEN
-struct DB_SaveLoad : public Sql {
-#endif
-
 /** Connect to the MySQL database when the object is loaded.
  */
 void create() {
@@ -49,7 +45,3 @@ int save_object(int oid, string data) {
    }
    return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

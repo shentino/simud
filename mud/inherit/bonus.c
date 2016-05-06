@@ -16,9 +16,6 @@
  * decided what all our bonuses will be.
  */
 /// Inheritable component for defining bonuses
-#ifdef DOXYGEN
-struct Bonus {
-#endif
 
 /// A mapping of all the bonuses
 mapping bonus = ([ ]);
@@ -96,7 +93,3 @@ void set_bonuses(mapping m) {
  * out if an object inherits this one.
  */
 string bonus_info() { return "str_bonus\ndex_bonus\ncon_bonus\nspd_bonus\nwil_bonus\nint_bonus\nemp_bonus\ncha_bonus\nbonuses"; }
-
-#ifdef DOXYGEN
-};
-#endif

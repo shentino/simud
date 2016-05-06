@@ -6,10 +6,6 @@
  * outside of a centralized managing object.
  */
 
-#ifdef DOXYGEN
-struct Time {
-#endif
-
 // "CDEF":"[070", "CREF":"[100", "CHLP":"[060",
 // "CCOM":"[140", "CBRT":"[150", "CEMO":"[100",
 // "CLAB":"[140", "CACT":"[100", "CTIT":"[110",
@@ -225,7 +221,3 @@ string destructor( object ob ) {
    "/secure/master"->set_hold_var( boot_time );
    return 0;
 }
-
-#ifdef DOXYGEN
-};
-#endif

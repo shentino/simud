@@ -9,10 +9,6 @@
  * more precisely than liquids.
  */
 
-#ifdef DOXYGEN
-struct Resource : public Inven, public Object, public Item, public Desc, public Quantity {
-#endif
-
 WEIGHT( 1000 ) // Weight of 1000 units, in grams
 BULK( 1000 )   // Bulk of 1000 units, in ml
 GETTABLE( 1 )
@@ -62,7 +58,3 @@ string query_default_unit() {
 string query_default_units() {
    return this_object()->query_default_unit() + "s";
 }
-
-#ifdef DOXYGEN
-};
-#endif

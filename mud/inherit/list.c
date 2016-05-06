@@ -9,10 +9,6 @@
  * method for getting variable lists, for example).
  */
 
-#ifdef DOXYGEN
-struct List {
-#endif
-
 int list_size(string list) {
 //  int i, count;
 //  if(!list || list == "") return 0;
@@ -226,7 +222,3 @@ void call_out_each(string list, string funcname, int delay) {
       }
    }
 }
-
-#ifdef DOXYGEN
-};
-#endif

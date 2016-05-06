@@ -9,10 +9,6 @@
 
 /// To be documented.
 
-#ifdef DOXYGEN
-struct Mailmsg : public Desc {
-#endif
-
 string folder_name, *subject, *sender, *text, *whom;
 int *flags;
 int *mtime;
@@ -428,7 +424,3 @@ save_mail_folder() {
 void on_suspend() {
    destruct( this_object() );
 }
-
-#ifdef DOXYGEN
-   };
-#endif

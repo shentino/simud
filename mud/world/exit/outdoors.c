@@ -12,10 +12,6 @@
 #include <const/battconst.h>
 inherit "/world/exit/twoway";
 
-#ifdef DOXYGEN
-struct Outdoors {
-#endif
-
 nosave int invis = -1;
 
 /** The pattern for drawing the exit; actually on top of the walls.
@@ -271,7 +267,3 @@ mapping query_aspects() {
 int query_is_exit() {
    return !query_invis();
 }
-
-#ifdef DOXYGEN
-};
-#endif

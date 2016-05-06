@@ -5,10 +5,6 @@
 
 /// \todo Document this object.
 
-#ifdef DOXYGEN
-struct Master {
-#endif
-
 mapping hold_var;
 
 #define SIMUL_EFUN_FILE "/secure/simul_efun"
@@ -661,7 +657,3 @@ int query_allow_shadow( object victim ) {
    if( load_name(victim) == "/obj/mirror" || getuid(previous_object()) == MASTER_UID ) return 1;
    return 0;
 }
-
-#ifdef DOXYGEN
-};
-#endif

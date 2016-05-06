@@ -9,10 +9,6 @@ inherit "/world/exit/twoway";
 /** This exit type is for the city gate.
  */
 
-#ifdef DOXYGEN
-struct Bigcitygate {
-#endif
-
 void on_action( object target );
 
 LOOK( "A large, sturdy city gate, heavily built from bars of iron." )
@@ -219,7 +215,3 @@ object id( string param ) {
    if( up_ob == this_object() ) return match_ob;
    return up_ob;
 }
-
-#ifdef DOXYGEN
-};
-#endif

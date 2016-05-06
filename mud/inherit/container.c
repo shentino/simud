@@ -8,10 +8,6 @@
  * close. For those objects, look at the Lid component.
  */
 
-#ifdef DOXYGEN
-struct Container {
-#endif
-
 /// The message given when removal is forbidden
 string prevent_remove,
 /// The message given when insertion is forbidden
@@ -181,8 +177,3 @@ int on_consume( int max ) {
       res |= ob->on_consume( max );
    return res;
 }
-
-
-#ifdef DOXYGEN
-};
-#endif

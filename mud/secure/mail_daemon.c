@@ -1,10 +1,6 @@
 #include "inven.h"
 #include "desc.h"
 
-#ifdef DOXYGEN
-struct Mail_daemon {
-#endif
-
 create() {
    // short = "The Mail Daemon";
    name = "MailDaemon NULL";
@@ -148,7 +144,3 @@ respond() {
   msg("The Mail Daemon is Loaded.");
   return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

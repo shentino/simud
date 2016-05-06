@@ -9,10 +9,6 @@
  * should inherit this.
  */
 
-#ifdef DOXYGEN
-struct Wall {
-#endif
-
 // foundstones need this
 int query_is_wall() {
    return 1;
@@ -195,7 +191,3 @@ void on_map_paint( object painter ) {
       }
    }
 }
-
-#ifdef DOXYGEN
-};
-#endif

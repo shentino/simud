@@ -4,10 +4,6 @@
 /** \todo Describe the purpose of this object.
  */
 
-#ifdef DOXYGEN
-struct Script : public Saveload, public Object {
-#endif
-
 string *events;
 mapping commands;
 nosave int jump_pos;
@@ -253,7 +249,3 @@ void call( string str ) {
    else
       call_other( this_player(), str );
 }
-
-#ifdef DOXGYEN
-};
-#endif

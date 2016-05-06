@@ -3,10 +3,6 @@
  * objects within this area.
  */
 
-#ifdef DOXYGEN
-struct Exit_info {
-#endif
-
 /** An array of this form:
  * ({ ([ ... ]), ([ ... ]), ... })
  * Basically, each mapping in the array represents an exit. Exits are then referenced by number.
@@ -329,7 +325,3 @@ void set_exits( mapping *m ) {
 void set_room_exits( mapping m ) {
    if( mappingp(m) ) room_exits = m;
 }
-
-#ifdef DOXYGEN
-};
-#endif

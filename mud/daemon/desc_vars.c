@@ -3,10 +3,6 @@
  * Important: Please keep things in alphabetical order, see the create() at end
  */
 
-#ifdef DOXYGEN
-struct Desc_vars {
-#endif
-
 /** ADJ (who): A player's adjectival description
  */
 string adj( object who ) {
@@ -495,7 +491,3 @@ void create() {
    set_global_desc_var( "WEIGHT" , #'weight );
    set_global_desc_var( "WORN", #'worn );
 }
-
-#ifdef DOXYGEN
-};
-#endif

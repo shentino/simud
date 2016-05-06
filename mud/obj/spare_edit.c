@@ -6,9 +6,6 @@
  * Hello, and welcome to my second attempt at a full screen text
  * editor. I'll explain it more if I get anywhere.
  */
-#ifdef DOXYGEN
-struct Fulledit : public Textdraw {
-#endif
 
 // Prototypes.
 void do_refresh();
@@ -691,7 +688,3 @@ void keypress( string c ) {
    }
    do_refresh();
 }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -19,10 +19,6 @@
  * variables, which can be used in any object).
  */
 
-#ifdef DOXYGEN
-struct Extra_desc {
-#endif
-
 /// A mapping of keywords to strings for local descriptions.
 mapping descs;
 
@@ -184,7 +180,3 @@ string extra_id(string str) {
       return extra_id( str );
    return 0;
 }
-
-#ifdef DOXYGEN
-};
-#endif

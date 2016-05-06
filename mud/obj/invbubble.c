@@ -17,10 +17,6 @@
  * of suspended animation.
  */
 
-#ifdef DOXYGEN
-struct Invbubble : public Inven, public Object {
-#endif
-
 string name;
 
 object id( string str ) {
@@ -46,7 +42,3 @@ void check_contents() {
    if( !first_inventory(this_object()) )
       destruct( this_object() );
 }
-
-#ifdef DOXYGEN
-};
-#endif

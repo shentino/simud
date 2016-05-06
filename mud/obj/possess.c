@@ -5,10 +5,6 @@
  * a tool for a game-master style wizard to use in role-playing NPC's.
  */
 
-#ifdef DOXYGEN
-struct Possess : public Object {
-#endif
-
 mapping alias;
 
 /// The thing being possessed
@@ -119,7 +115,3 @@ void on_suspend() {
    drop_interface();
    destruct(this_object());
 }
-
-#ifdef DOXYGEN
-};
-#endif

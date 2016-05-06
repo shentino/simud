@@ -2,9 +2,6 @@
  * of primary statistics (str, con, dex, spd, wil, int, cha, emp)
  * is in here.
  */
-#ifdef DOXYGEN
-struct Stats {
-#endif
 
 #define DECAY_DAMPER 100
 
@@ -328,7 +325,3 @@ void set_emp(int x) { set_stat( "emp", x ); }
 void set_charm(int x) { set_stat( "cha", x );  }
 /// Set this living's charm, one of the eight base stats.
 void set_cha(int x) { set_stat( "cha", x ); }
-
-#ifdef DOXYGEN
-};
-#endif

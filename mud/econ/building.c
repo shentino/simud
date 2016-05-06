@@ -8,10 +8,6 @@
 #include <const/exitsconst.h>
 #include <room_paths.h>
 
-#ifdef DOXYGEN
-struct Building : public Inven, public Desc, public Scenedesc {
-#endif
-
 int query_is_building() { return 1; }
 string building_info() { return "hp\nmaxhp"; }
 string query_owner();
@@ -214,7 +210,3 @@ int check_direction( int dir ) {
    msg("For this type of building, just walk to the upper-left corner and build; do not specify a direction.");
    return -1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

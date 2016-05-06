@@ -32,10 +32,6 @@
  * which is not handled properly, go ahead and add it in here.
  */
 
-#ifdef DOXYGEN
-struct Verb {
-#endif
-
 /** Conjugates an English verb in the present tense. This should
  * work for all English verbs; failing on any verb is considered a
  * bug and ought to be fixed.
@@ -239,7 +235,3 @@ mapping query_adjective_list() {
 mapping query_exclamation_list() {
    return exclamation_list;
 }
-
-#ifdef DOXYGEN
-};
-#endif

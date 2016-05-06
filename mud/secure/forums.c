@@ -1,10 +1,6 @@
 #include <object.h>
 #include <sql.h>
 
-#ifdef DOXYGEN
-struct Forums : public Sql {
-#endif
-
 // Constant(s)
 #define ANONYMOUS_UID 1
 
@@ -99,7 +95,3 @@ varargs void create_new_thread( int fid, string location, string subject, string
    request( "INSERT INTO log (uid, level, message, at) VALUES ('" + uid + "', '1', 'started thread " + thread + "', NOW())" );
    request( "INSERT INTO log (uid, level, message, at) VALUES ('" + uid + "', '1', 'posted on thread " + thread + ", comment "+comment_id+": "+subject+"', NOW())" );
 }
-
-#ifdef DOXYGEN
-};
-#endif

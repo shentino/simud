@@ -3,10 +3,6 @@ string mymap;
 /** An object for generating ASCII maps.
  */
 
-#ifdef DOXYGEN
-struct Maps {
-#endif
-
 string *bottom_row = ({
  "'---'",
  "'----",
@@ -184,7 +180,3 @@ string make_map( string map_src, int map_width, int map_height ) {
 
    return map_str[..<2]; // Drop trailing \n
 }
-
-#ifdef DOXYGEN
-};
-#endif

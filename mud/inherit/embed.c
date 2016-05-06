@@ -3,10 +3,6 @@
  * You will probably need to implement other functionality yourself.
  */
 
-#ifdef DOXYGEN
-struct Embed {
-#endif
-
 void set_host( object x ) {
    this_object()->set_var("host", to_objectref(x));
 }
@@ -16,7 +12,3 @@ object query_host() {
       return 0;
    return find_objectref( this_object()->query_var("host") );
 }
-
-#ifdef DOXYGEN
-};
-#endif

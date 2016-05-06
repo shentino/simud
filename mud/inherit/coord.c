@@ -16,10 +16,6 @@
  * coordinates as whatever cell it is in.
  */
 
-#ifdef DOXYGEN
-struct Coord {
-#endif
-
 /// The coordinate of this object.
 int coord;
 
@@ -110,7 +106,3 @@ varargs int query_adjacent( mixed x, int y ) {
      return 0;
    return xdif < 2 && ydif < 2;
 }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -8,10 +8,6 @@
  * give it root access either, as there are some security issues).
  */
 
-#ifdef DOXYGEN
-struct Finger_daemon : public Common {
-#endif
-
 /// Dummy variable for reading in data from the player's file.
 string email, hide_email, name, pretitle, title, job_title, *alignment, last_ip;
 mapping vars, env_vars;
@@ -173,7 +169,3 @@ int finger_player(string fname) {
   msg(buf);
   return 1;
 }
-
-#ifdef DOXYGEN
-};
-#endif

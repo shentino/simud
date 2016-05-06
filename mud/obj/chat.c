@@ -7,10 +7,6 @@
 
 /// To be documented.
 
-#ifdef DOXYGEN
-struct Chat {
-#endif
-
 int muted;
 int query_muted() { return muted; }
 
@@ -346,7 +342,3 @@ void kaboom() {
    else
       destruct(this_object());
 }
-
-#ifdef DOXYGEN
-};
-#endif

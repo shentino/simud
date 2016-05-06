@@ -3,10 +3,6 @@
 /** The same as spots, except with grid snapping on the spots.
  */
 
-#ifdef DOXYGEN
-struct GridSnap {
-#endif
-
 /// \return Width of one tile of the wall. Override it for your wall.
 int query_tile_width() {
    return 1;
@@ -36,7 +32,3 @@ void remove_spot( int pos ) {
    y = (y / query_tile_height()) * query_tile_height();
    ::remove_spot( MAKE_C(x + 1, y + 1, CZ(pos)) );
 }
-
-#ifdef DOXYGEN
-};
-#endif

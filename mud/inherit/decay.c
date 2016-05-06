@@ -17,10 +17,6 @@
  * For information on that, read the on_decay man page.
  */
 
-#ifdef DOXYGEN
-struct Decay {
-#endif
-
 int decay;
 
 /// Sets the decay speed to \a x.
@@ -81,7 +77,3 @@ void _reset_decay() {
 static void decay_destruct() {
    destruct( this_object() );
 }
-
-#ifdef DOXYGEN
-};
-#endif DOXYGEN

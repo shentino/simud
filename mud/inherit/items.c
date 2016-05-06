@@ -4,10 +4,6 @@
  * one 'thing' per item.
  */
 
-#ifdef DOXYGEN
-struct Pluralitem {
-#endif
-
 /** If this variable is set, this material MUST be held in a watertight container. If
  * it is clear (0), then it may be dropped on the ground.
  */
@@ -36,7 +32,3 @@ int query_liquid() {
 void set_liquid( int x ) {
    liquid = x;
 }
-
-#ifdef DOXYGEN
-};
-#endif

@@ -1,7 +1,3 @@
-#ifdef DOXYGEN
-struct Landmark {
-#endif
-
 /// Mapping of name: position
 mapping landmarks;
 
@@ -73,7 +69,3 @@ string get_landmark_description( int pos ) {
 
    return "~CBRTLandmarks~CDEF\n" + comma_list( desc );
 }
-
-#ifdef DOXYGEN
-};
-#endif
