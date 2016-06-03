@@ -71,24 +71,14 @@ void add_water_spot( int pos ) {
       SMAKE_C(-1,0,0),
       SMAKE_C(0,-1,0),
       SMAKE_C(1,0,0),
-      SMAKE_C(0,1,0)
-   });
-
-   int *adj2 = ({
-      SMAKE_C(-2,0,0),
-      SMAKE_C(-1,-1,0),
-      SMAKE_C(0,-2,0),
-      SMAKE_C(1,-1,0),
-      SMAKE_C(2,0,0),
-      SMAKE_C(1,1,0),
-      SMAKE_C(0,2,0),
-      SMAKE_C(-1,1,0)
+      SMAKE_C(0,1,0),
    });
 
    int idelta;
 
    // Wet rock (i.e. death); was WATER
    set_cell_index( CX(pos), CY(pos), 0, WETROCK );
+
    // Damp rock (i.e. warning); was WETROCK
    foreach( idelta: adj ) {
       int wetpos = OFFSET_C(pos, idelta);
@@ -162,6 +152,7 @@ void make_level( int num_spots, int xdim, int ydim ) {
    }
 
    int mineral_total = 0;
+
    // Add minerals
    for( irock = 0; irock < xdim * ydim; irock++ ) {
       rx = random( query_xdim() );
@@ -171,6 +162,7 @@ void make_level( int num_spots, int xdim, int ydim ) {
       mineral_total++;
       if( mineral_total >= 10 ) break;
    }
+
    // Offset from room border
    set_x(1);
    set_y(1);
