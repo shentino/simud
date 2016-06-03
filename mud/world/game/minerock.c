@@ -176,11 +176,11 @@ void on_map_paint( object painter ) {
    for( iy = query_ydim(); iy--; )
    for( ix = query_xdim(); ix--; ) {
       if( !query_has_spot(MAKE_C(ix,iy,0)) )
-         switch( query_cell_index(ix, iy, 0) ) {
+         int cidx = query_cell_index(ix, iy, 0);
+         switch( cidx ) {
          // Dug
-         case 10: painter->paint( ix + offx, iy + offy, '1', 0x0C, LAYER_ROUGH ); break;
-         case 11: painter->paint( ix + offx, iy + offy, '2', 0x0C, LAYER_ROUGH ); break;
-         case 12: painter->paint( ix + offx, iy + offy, '3', 0x0C, LAYER_ROUGH ); break;
+         case 10 .. 17:
+            painter->paint( ix + offx, iy + offy, '0' + (cidx - 10), 0x0C, LAYER_ROUGH ); break;
          }
       else {
          // Undug
@@ -206,26 +206,13 @@ void cheat() {
    for( iy = query_ydim(); iy--; )
    for( ix = query_xdim(); ix--; ) {
          switch( query_cell_index(ix, iy, 0) ) {
-            case  5:                                    // stairs up
-            case  0: ret[ix + iy * query_xdim() + iy] = ' '; break;   // empty floor
+            case  5: // stairs up
+            case  0: ret[ix + iy * query_xdim() + iy] = ' '; break; // empty floor
             case  6: ret[ix + iy * query_xdim() + iy] = '>'; break; // stairs down
             case  4: ret[ix + iy * query_xdim() + iy] = '+'; break; // minerals
 
          case  1:
-         case 10:
-         case 11:
-         case 12: ret[ix + iy * query_xdim() + iy] = '.'; break;
-
-/*
-            case  3: ret[ix + iy * query_xdim() + iy] = '.'; break;
-            case  3:                                    // water
-            case  2: ret[ix + iy * query_xdim() + iy] = '#'; break; // touching
-            case 10: ret[ix + iy * query_xdim() + iy] = '1'; break;   // dug and touching 2
-            case 11: ret[ix + iy * query_xdim() + iy] = '2'; break;   // dug and touching 2
-            case 12: ret[ix + iy * query_xdim() + iy] = '3'; break;   // dug and touching 3
-
-            default: ret[ix + iy * query_xdim() + iy] = query_cell_index(ix, iy, 0) + 65; // nice debug
-*/
+         case 10 .. 17: ret[ix + iy * query_xdim() + iy] = '.'; break;
             default: ret[ix + iy * query_xdim() + iy] = '#';
          }
    }
