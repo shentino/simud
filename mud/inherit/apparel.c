@@ -4,9 +4,9 @@
  */
 
 int worn;           ///< 1 if worn
-//int flexible;       ///< whether or not the item can bend
-//int size;           ///< 0..50 (humans can wear sizes 12..28)
-//int body_parts;     ///< body parts covered by this item
+int flexible;       ///< whether or not the item can bend
+int size;           ///< 0..50 (humans can wear sizes 12..28)
+int body_parts;     ///< body parts covered by this item
 int layer;          ///< which layer this item is being worn on
 
 /// Object editor information.
@@ -96,24 +96,27 @@ varargs int wear_armour(int silent) {
    foreach ( obj : all_inventory(owner) ) {
       if (obj->query_is_apparel() && obj->query_worn()) {
          if (obj->query_body_parts() & query_body_parts()) {
-            int osize = obj->query_size(), oflex = obj->query_flexible(), ocloth = obj->query_cloth(), small;
-            //debug("osize = "+osize+", oflex = "+oflex);
+            int osize = obj->query_size();
+            int oflex = obj->query_flexible();
+            int ocloth = obj->query_cloth();
+            int small;
+
             if (ocloth) {
-               if (oflex && osize > query_size()) {      // flexible cloth
-                  //debug("flexible cloth - oflex & osize > size");
+               if (oflex && osize > query_size()) {
+                  // flexible cloth
                   small = 1;
-            } else if (!oflex && osize > query_size() - 3) {  // rigid cloth
-                  //debug("rigid cloth - !oflex & osize > size-3");
+            } else if (!oflex && osize > query_size() - 3) {
+                  // rigid cloth
                   small = 1;
                }
             } else {
-               if (oflex && osize > query_size() - 5) {     // metal
-                  //debug("flexible metal - oflex & osize > size-5");
+               if (oflex && osize > query_size() - 5) {
+                  // flexible metal (example: chainmail)
                   small = 1;
                }
+
                // can't wear rigid clothing over other rigid clothing.
                if (!oflex && !query_flexible()) {
-                  //debug("rigid metal - !oflex & !flex");
                   small = 1;
                }
             }
