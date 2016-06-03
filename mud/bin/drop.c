@@ -50,12 +50,12 @@ void on_action( object target, object *list ) {
    for( i = 0; i < sizeof(list); i++ ) {
       if (!burdened &&
          sizeof(all_inventory(environment(this_player())))
-         >= 200
+         >= 100
       ) {
          /* unless it's a forced fumble, limit the number of objects
-         in a room to 200.  Otherwise we get nsdf's from driver indigestion
+         in a room to 100.  Otherwise we get nsdf's from driver indigestion
          - gp */
-         msg("This place is too cluttered for you to drop anything else.");
+         msg("This place is too cluttered for you to drop anything.");
          return;
       }
       int flag = 0;
