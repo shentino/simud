@@ -3,10 +3,10 @@
 #define FILE "/daemon/party"
 
 mapping parties;
+
 struct Party {
 	string leader;
 	string *members;	// array of all members
-	int    bonus;		// how many bonuses generated this time around?
 };
 
 //// prototypes ////
@@ -30,6 +30,7 @@ string *query_party_members(string party) {
 	else
 		return ({});
 }
+
 string query_party_leader(string party) {
 	if( query_party_exists(party) )
 		return parties[party]->leader;
@@ -223,29 +224,6 @@ string query_mentor(string member) {
 		}
 		return 0;
 	}
-}
-
-void divvy_bonus(string party, object room, string skill, int amt) {
-	string member;
-	debug("divvy: "+party+", "+skill+": "+amt, "party");
-	if( !query_party_exists(party) )
-		return debug("attempt to divvy for nonexistant party","party");
-	// tally all bonuses earned ;)
-	parties[party]->bonus += amt;
-	// actually distribute the points
-	foreach( member : query_party_members(party) ) {
-		object ob = find_member(member);
-		if( environment(ob) == room )
-			ob->add_skill( skill, amt, 1 );
-	}
-}
-
-int query_bonus(string party) {
-	if( !query_party_exists(party) ) {
-		debug("attempt to get bonus for nonexistant party","party");
-		return 0;
-	}
-	return parties[party]->bonus;
 }
 
 void load() {
