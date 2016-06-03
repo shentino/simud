@@ -291,9 +291,9 @@ int on_dig( int param ) {
       set_target( rock );
       rock->move(environment(this_player()));
       rock->set_coord(pos);
-     AUDIO_DAEMON->sfx_room( environment(this_player()), "debris.wav" );
+      AUDIO_DAEMON->sfx_room( environment(this_player()), "debris.wav" );
       this_player()->msg_local("~CACT~Atar ~vertfall from the ceiling and bonks ~name on the head!~CDEF");
-     this_player()->set_env_var("cause_of_death","got thumped in the head by a falling rock.");
+      this_player()->set_env_var("cause_of_death","got thumped in the head by a falling rock.");
       this_player()->take_damage( (["blunt": 3]), BP_HEAD );
    }
 
@@ -318,7 +318,7 @@ int on_dig( int param ) {
          // Give 'em a bunch of this mine's mineral type.
          object stuff;
          AUDIO_DAEMON->sfx_room( environment(this_player()), "dug_something.wav" );
-       mineral = query_mineral();
+         mineral = query_mineral();
          if( !mineral ) set_mineral( mineral = "/econ/raw/stone" );
          stuff = clone_object(mineral);
          // TODO: modify this for skill
