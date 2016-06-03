@@ -67,11 +67,24 @@ int query_end_pos() {
 #define NEIGHBOR_BASE 9
 
 void add_water_spot( int pos ) {
-   int *adj = ({ SMAKE_C(-1,0,0), SMAKE_C(0,-1,0),
-      SMAKE_C(1,0,0), SMAKE_C(0,1,0) });
-   int *adj2 = ({ SMAKE_C(-2,0,0), SMAKE_C(-1,-1,0),
-      SMAKE_C(0,-2,0), SMAKE_C(1,-1,0), SMAKE_C(2,0,0),
-      SMAKE_C(1,1,0), SMAKE_C(0,2,0), SMAKE_C(-1,1,0) });
+   int *adj = ({
+      SMAKE_C(-1,0,0),
+      SMAKE_C(0,-1,0),
+      SMAKE_C(1,0,0),
+      SMAKE_C(0,1,0)
+   });
+
+   int *adj2 = ({
+      SMAKE_C(-2,0,0),
+      SMAKE_C(-1,-1,0),
+      SMAKE_C(0,-2,0),
+      SMAKE_C(1,-1,0),
+      SMAKE_C(2,0,0),
+      SMAKE_C(1,1,0),
+      SMAKE_C(0,2,0),
+      SMAKE_C(-1,1,0)
+   });
+
    int idelta;
 
    // Wet rock (i.e. death); was WATER
