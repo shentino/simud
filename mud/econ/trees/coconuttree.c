@@ -12,10 +12,6 @@ string query_name() {
   return "palm";
 }
 
-string query_fruit_type() {
-  return "/econ/seed/coconut";
-}
-
 string query_look() {
    switch( query_size() ) {
       case 0..10: return "This palm tree is just a small green sprout sticking out of the ground. The trunk is $(TREEHP).";

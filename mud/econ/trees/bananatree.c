@@ -11,7 +11,3 @@ void create() {
 string query_name() {
   return "banana";
 }
-
-string query_fruit_type() {
-  return "/econ/seed/banana";
-}
