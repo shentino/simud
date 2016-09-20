@@ -79,7 +79,8 @@ void heart_beat()
    }
 }
 
-/** Decrease the food and drink levels on all livings in the mud. Normal
+/*
+ * Decrease the food and drink levels on all livings in the mud. Normal
  * players and mobs will lose 4 of each every game hour. Other factors can
  * affect the rate at which individual food and drink levels decay.
  */
