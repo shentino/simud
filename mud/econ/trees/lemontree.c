@@ -13,7 +13,7 @@ string query_name() {
 }
 
 string query_wood_type() {
-  return "/econ/raw/lemonwood";
+  return "/econ/raw/wood/lemonwood";
 }
 
 string query_fruit_type() {

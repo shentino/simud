@@ -12,7 +12,7 @@ int query_wood() {
 }
 
 string query_wood_type() {
-   return "/econ/raw/pinewood";
+   return "/econ/raw/wood/pinewood";
 }
 
 string query_fruit_type() {
