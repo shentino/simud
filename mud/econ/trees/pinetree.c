@@ -11,10 +11,6 @@ int query_wood() {
    return 10;
 }
 
-string query_wood_type() {
-   return "/econ/raw/wood/pinewood";
-}
-
 string query_fruit_type() {
    return "/econ/seed/pinecone";
 }

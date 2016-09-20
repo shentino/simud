@@ -6,10 +6,6 @@ string query_name() {
   return "cherry";
 }
 
-string query_wood_type() {
-  return "/econ/raw/wood/"+query_name()+"wood";
-}
-
 string query_fruit_type() {
   return "/econ/seed/"+query_name();
 }

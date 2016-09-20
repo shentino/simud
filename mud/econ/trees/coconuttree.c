@@ -12,10 +12,6 @@ string query_name() {
   return "palm";
 }
 
-string query_wood_type() {
-  return "/econ/raw/wood/coconutwood";
-}
-
 string query_fruit_type() {
   return "/econ/seed/coconut";
 }
